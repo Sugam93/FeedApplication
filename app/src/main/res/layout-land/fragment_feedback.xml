@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f2e6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CustomFont.MyTextViewBold
+                    android:id="@+id/mtextview_transationid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="TRANSATION ID DK080901"
+                    android:textColor="#555555"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/jdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="15dp">
+
+                            <CustomFont.MyEditTextBlack
+                                android:id="@+id/medittext_jdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="JOURNEY DATE"
+                                android:inputType="number"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/jplace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="15dp">
+
+                            <CustomFont.MyEditTextBlack
+                                android:id="@+id/medittext_jplace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="JOURNEY PLACE"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/mdrivername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="15dp">
+
+                            <CustomFont.MyEditTextBlack
+                                android:id="@+id/medittext_drivername"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="DRIVER NAME"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/mcontactnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:editable="false"
+                            android:layout_marginRight="15dp">
+
+                            <CustomFont.MyEditTextBlack
+                                android:id="@+id/medittext_contactnumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="DRIVER CONTACT NUMBER"
+                                android:inputType="number"
+                                android:focusable="false"
+                                android:singleLine="true"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/carno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="15dp">
+
+                            <CustomFont.MyEditTextBlack
+                                android:id="@+id/medittext_carno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="CAR NO"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/mcarname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="15dp">
+
+                            <CustomFont.MyEditTextBlack
+                                android:id="@+id/medittext_carname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="CAR NAME"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <CustomFont.MyTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="RATING OUR SERVICE"
+                            android:textColor="#555555"
+                            android:textSize="30dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <CustomFont.MyTextViewBlack
+                                android:id="@+id/mtextview_driving"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1) DRIVING"
+                                android:textColor="#555555"
+                                android:textSize="14dp" />
+
+                            <RatingBar
+                                android:id="@+id/mrating_drivingstar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="0"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <CustomFont.MyTextViewBlack
+                                android:id="@+id/mtextview_driverbehavi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2) DRIVER'S BEHAVIOUR"
+                                android:textColor="#555555"
+                                android:textSize="14dp" />
+
+                            <RatingBar
+                                android:id="@+id/mrating_driverbehaviour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="0"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <CustomFont.MyTextViewBlack
+                                android:id="@+id/mtextview_driverperform"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3) DRIVER'S ON PERFORMANCE TIME"
+                                android:textColor="#555555"
+                                android:textSize="14dp" />
+
+                            <RatingBar
+                                android:id="@+id/mrating_driverperform"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="0"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <CustomFont.MyTextViewBlack
+                                android:id="@+id/mtextview_carcandition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4) CAR CONDITION"
+                                android:textColor="#555555"
+                                android:textSize="14dp" />
+
+                            <RatingBar
+                                android:id="@+id/mrating_carcandition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="0"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <CustomFont.MyTextViewBlack
+                                android:id="@+id/mtextview_overservice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5) OVERALL SERVICES"
+                                android:textColor="#555555"
+                                android:textSize="14dp" />
+
+                            <RatingBar
+                                android:id="@+id/mrating_overservice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:rating="0"
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mremark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="15dp">
+
+                        <CustomFont.MyEditTextBlack
+                            android:id="@+id/medittext_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="REMARKS"
+                            android:inputType="text"
+                            android:textSize="15dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true">
+
+                        <Button
+                            android:id="@+id/mButton_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/ripple_effect"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:padding="20dp"
+                            android:text="SUBMIT"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

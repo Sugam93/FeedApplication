@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorDarkPista">#D1BB8A</color>
+    <color name="colorLightPista">#F8F2E6</color>
+    <color name="colorTripText">#6C6B69</color>
+    <color name="colorWhiteCard">#F5F5F5</color>
+    <color name="textblack">#545655</color>
+
+    <color name="starblack">#555555</color>
+    <color name="stargold">#f8ab05</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="splashBackground">#ccb57f</color>
+    <color name="background">#f8f2e6</color>
+    <color name="BlackColor">#F8AB05</color>
+    <color name="subText">#545655</color>
+    <color name="titleText">#555555</color>
+    <color name="ratingbarColor">#F8AB05</color>
+</resources>

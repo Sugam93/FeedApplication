@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Feed App</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="car_prompt">SELECT CAR NUMBER</string>
+    <string name="driver_prompt">SELECT DRIVER NAME</string>
+
+    <string-array name="spinnerCarArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="spinnerDriverArray">
+        <item>Ramu</item>
+        <item>Shyamu</item>
+        <item>Ganesh</item>
+        <item>Vikas</item>
+    </string-array>
+
+</resources>

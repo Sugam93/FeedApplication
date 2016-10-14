@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_client_review_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/sp_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/spinnerDriverArray"
+                android:prompt="@string/driver_prompt" />
+
+            <CustomFont.MyEditTextBlack
+                android:id="@+id/met_overallFeedbackDriverSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="OVERALL FEEDBACK"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/subText"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="5">
+
+                <CustomFont.MyEditTextBlack
+                    android:id="@+id/met_fromDateDriverSide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:hint="FROM DATE"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/subText"
+                    android:textSize="15sp" />
+
+                <CustomFont.MyEditTextBlack
+                    android:id="@+id/met_toDateDriverSide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="2"
+                    android:hint="TO DATE"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/subText"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/miv_searchDriverSide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:src="@drawable/ic_checked" />
+
+            </LinearLayout>
+
+            <CustomFont.MyTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="1)DRIVING"
+                android:textColor="@color/textblack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/mrb_drivingDriverSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+            <CustomFont.MyTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="2)DRIVER'S BEHAVIOUR"
+                android:textColor="@color/textblack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/mrb_driverBehaviourDriverSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+            <CustomFont.MyTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="3)DRIVER'S ON PERFORMANCE TIME"
+                android:textColor="@color/textblack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/mrb_driversOnPerformanceTimeDriverSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+            <CustomFont.MyTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="4)CAR CONDITION"
+                android:textColor="@color/textblack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/mrb_carConditionDriverSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+            <CustomFont.MyTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="5)OVERALL SERVICES"
+                android:textColor="@color/textblack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/mrb_overallServicesDriverSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+            <CustomFont.MyTextViewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="6)AVERAGE RATING"
+                android:textColor="@color/textblack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/mrb_averageRatingDriverSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
